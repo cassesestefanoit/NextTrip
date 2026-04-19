@@ -1,12 +1,6 @@
 import { useState } from "react";
-import { ContactoModal } from "../sections/ContactoModal"; // importa el modal
-
-interface Paquete {
-  titulo: string;
-  descripcion: string;
-  precio: number;
-  imagen: string;
-}
+import { ContactoModal } from "../sections/ContactoModal";
+import type { Paquete } from "../../types/paquete"; 
 
 interface PaquetesModalProps {
   paquete: Paquete | null;
@@ -26,7 +20,8 @@ export const PaquetesModal: React.FC<PaquetesModalProps> = ({ paquete, onClose }
           {/* Header */}
           <div className="flex justify-between items-center mb-3 sm:mb-4">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1A3D63]">
-              {paquete.titulo}
+              {paquete.titulo ?? paquete.destino ?? "Paquete sin título"} 
+              {/* ✅ fallback si no hay titulo */}
             </h2>
             <button
               onClick={onClose}
@@ -45,7 +40,7 @@ export const PaquetesModal: React.FC<PaquetesModalProps> = ({ paquete, onClose }
           <div className="overflow-hidden rounded-lg shadow-md mb-4">
             <img
               src={paquete.imagen}
-              alt={paquete.titulo}
+              alt={paquete.titulo ?? paquete.destino ?? "Imagen de paquete"}
               className="w-full object-cover"
             />
           </div>
