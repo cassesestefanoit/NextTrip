@@ -1,0 +1,15 @@
+.my-masonry-grid {
+  display: flex;
+  margin-left: -16px; /* espacio entre columnas */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 16px; /* espacio entre columnas */
+  background-clip: padding-box;
+}
+
+/* cada item dentro de la columna */
+.my-masonry-grid_column > div {
+  margin-bottom: 16px;
+}
