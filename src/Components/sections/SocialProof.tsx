@@ -11,7 +11,7 @@ export const SocialProof = () => {
         <div className="relative flex flex-col items-center">
           <div className="relative w-full sm:w-3/4">
             <img
-              src="/src/assets/MapaMundi.png"
+              src="../../assets/MapaMundi.png"
               alt="Mapamundi"
               className="w-full h-auto object-contain rounded-lg shadow-lg opacity-80"
             />

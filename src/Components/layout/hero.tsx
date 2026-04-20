@@ -44,7 +44,7 @@ export const Hero = () => {
     <section className="relative h-screen flex items-center justify-center pt-28">
       {/* Background */}
       <img
-        src="/src/assets/Hero.png"
+        src="../../assets/Hero.jpg"
         alt="Hero background"
         className="absolute inset-0 w-full h-full object-cover"
       />

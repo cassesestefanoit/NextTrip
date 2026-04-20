@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ContactoModal } from "../sections/ContactoModal"; // importa el modal
+import { ContactoModal } from "../sections/ContactoModal"; 
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ export const Header = () => {
           {/* Logo */}
           <div className="flex flex-col items-center">
             <img
-              src="/src/assets/Logo.png"
+              src="../../assets/Logo.png"
               alt="NextTrip Logo"
               className="w-12 h-12 sm:w-14 sm:h-14 object-contain"
             />
