@@ -1,6 +1,7 @@
 import { FaSmile, FaStar, FaHeadphones, FaCalendar } from "react-icons/fa";
 import { BiSolidBank } from "react-icons/bi";
 import { MdOutlineTravelExplore } from "react-icons/md";
+import  MapaMundiImg  from "../../assets/MapaMundi.png";
 
 export const SocialProof = () => {
   return (
@@ -11,7 +12,7 @@ export const SocialProof = () => {
         <div className="relative flex flex-col items-center">
           <div className="relative w-full sm:w-3/4">
             <img
-              src="../../assets/MapaMundi.png"
+              src={MapaMundiImg}
               alt="Mapamundi"
               className="w-full h-auto object-contain rounded-lg shadow-lg opacity-80"
             />

@@ -1,6 +1,7 @@
 import { useLayoutEffect, useState } from "react";
 import gsap from "gsap";
-import { ContactoModal } from "../sections/ContactoModal"; // importa el modal
+import { ContactoModal } from "../sections/ContactoModal";
+import heroImg from "../../assets/Hero.jpg"
 
 export const Hero = () => {
   const [openContact, setOpenContact] = useState(false);
@@ -44,7 +45,7 @@ export const Hero = () => {
     <section className="relative h-screen flex items-center justify-center pt-28">
       {/* Background */}
       <img
-        src="../../assets/Hero.jpg"
+        src={heroImg}
         alt="Hero background"
         className="absolute inset-0 w-full h-full object-cover"
       />
