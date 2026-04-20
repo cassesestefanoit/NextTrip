@@ -56,7 +56,7 @@ export const Hero = () => {
             {splitText("TU PRÓXIMO VIAJE LO ENCONTRAS ACÁ")}
           </h2>
           <p className="font-inter text-base md:text-xl text-white mb-4 split">
-            {splitText("Planificá, compará y reservá en minutos.")}
+            {splitText("Planificá,compará y reservá en minutos.")}
           </p>
           <p className="font-inter text-base md:text-xl text-white mb-6 split">
             {splitText("Todo lo que necesitás, lo encontras en")}
@@ -76,7 +76,7 @@ export const Hero = () => {
               onClick={scrollToPaquetes}
               className="font-montserrat font-bold text-sm md:text-base bg-white text-black px-5 py-3 rounded-2xl transition hover:bg-[#1A3D63] hover:text-white border border-[#1A3D63]"
             >
-              Buscar el mejor paquete para vos
+              Nuestros paquetes
             </button>
           </div>
         </div>
