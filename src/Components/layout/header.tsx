@@ -27,8 +27,8 @@ export const Header = () => {
           <nav className="hidden md:flex gap-4 lg:gap-6 font-inter font-bold text-base lg:text-xl text-black">
             <a href="#hero" className="hover:text-[#1A3D63]">Inicio</a>
             <a href="#destinos" className="hover:text-[#1A3D63]">Destinos</a>
-            <a href="#paquetes" className="hover:text-[#1A3D63]">Paquetes</a>
             <a href="#marcas" className="hover:text-[#1A3D63]">Nosotros</a>
+            <a href="#paquetes" className="hover:text-[#1A3D63]">Paquetes</a>
             <a href="#contacto" className="hover:text-[#1A3D63]">Contacto</a>
           </nav>
 
@@ -54,7 +54,7 @@ export const Header = () => {
         {/* Nav Mobile */}
         {menuOpen && (
           <div className="md:hidden bg-white/90 backdrop-blur-md shadow-md px-6 py-4 flex flex-col gap-4 text-black font-inter font-bold text-lg">
-            <a href="#hero" className="hover:text-[#1A3D63]">Home</a>
+            <a href="#hero" className="hover:text-[#1A3D63]">Inicio</a>
             <a href="#destinos" className="hover:text-[#1A3D63]">Destinos</a>
             <a href="#paquetes" className="hover:text-[#1A3D63]">Paquetes</a>
             <a href="#marcas" className="hover:text-[#1A3D63]">Nosotros</a>

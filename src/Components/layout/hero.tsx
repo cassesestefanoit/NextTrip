@@ -56,7 +56,7 @@ export const Hero = () => {
             {splitText("TU PRÓXIMO VIAJE LO ENCONTRAS ACÁ")}
           </h2>
           <p className="font-inter text-base md:text-xl text-white mb-4 split">
-            {splitText("Planificá,compará y reservá en minutos.")}
+            {splitText("Planificá y reservá en minutos.")}
           </p>
           <p className="font-inter text-base md:text-xl text-white mb-6 split">
             {splitText("Todo lo que necesitás, lo encontras en")}
