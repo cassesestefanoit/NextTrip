@@ -25,7 +25,7 @@ export const Header = () => {
 
           {/* Nav Desktop */}
           <nav className="hidden md:flex gap-4 lg:gap-6 font-inter font-bold text-base lg:text-xl text-black">
-            <a href="#hero" className="hover:text-[#1A3D63]">Home</a>
+            <a href="#hero" className="hover:text-[#1A3D63]">Inicio</a>
             <a href="#destinos" className="hover:text-[#1A3D63]">Destinos</a>
             <a href="#paquetes" className="hover:text-[#1A3D63]">Paquetes</a>
             <a href="#marcas" className="hover:text-[#1A3D63]">Nosotros</a>
