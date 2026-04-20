@@ -51,7 +51,7 @@ export const Hero = () => {
       />
       {/* Content con overlay detrás */}
       <div className="relative text-center px-6">
-        <div className="inline-block bg-black/25 rounded-lg px-6 py-6 max-w-2xl">
+        <div className="inline-block bg-black/25 rounded-lg px-6 py-6 max-w-3xl">
           <h2 className="font-fraunces text-2xl md:text-4xl font-bold text-white mb-6 split">
             {splitText("TU PRÓXIMO VIAJE LO ENCONTRAS ACÁ")}
           </h2>
