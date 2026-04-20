@@ -1,3 +1,4 @@
+import "../../styles/Marcas.css";
 import { marcas } from "../../data/Marcas";
 import "../../styles/marcas.css";
 

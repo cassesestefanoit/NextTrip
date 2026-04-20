@@ -19,7 +19,7 @@ export const destinos = [
   },
   {
     nombre: "Buenos Aires",
-    descripcion: "La ciudad que combina cultura y vida nocturna.",
+    descripcion: "Donde el arte se encuentra con la noche.",
     imagen: bsasImg,
     destacado: true,
   },

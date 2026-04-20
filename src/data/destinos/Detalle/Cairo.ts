@@ -1,4 +1,4 @@
-import cairo1 from "../../../assets/destinos/cairo/Cairo1.jpg";
+import cairo1 from "../../../assets/destinos/Cairo/Cairo1.jpg";
 import cairo2 from "../../../assets/destinos/cairo/Cairo2.jpg";
 import cairo3 from "../../../assets/destinos/cairo/Cairo3.jpg";
 import cairo4 from "../../../assets/destinos/cairo/cairo4.jpg";

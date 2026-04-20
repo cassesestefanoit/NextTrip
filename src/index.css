@@ -1,7 +1,8 @@
+@import "./fonts.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "./fonts.css";
+
 
 .swiper-pagination {
   bottom: -2px!important; /* mueve la barra más abajo */
