@@ -59,7 +59,7 @@ export const Hero = () => {
             {splitText("Planificá, compará y reservá en minutos.")}
           </p>
           <p className="font-inter text-base md:text-xl text-white mb-6 split">
-            {splitText("Todo lo que necesitás, en un solo lugar.")}
+            {splitText("Todo lo que necesitás, lo encontras en")}
           </p>
           <h1 className="font-fraunces text-2xl md:text-4xl font-bold text-white mb-6 split">
             {splitText("NextTrip.")}
@@ -76,7 +76,7 @@ export const Hero = () => {
               onClick={scrollToPaquetes}
               className="font-montserrat font-bold text-sm md:text-base bg-white text-black px-5 py-3 rounded-2xl transition hover:bg-[#1A3D63] hover:text-white border border-[#1A3D63]"
             >
-              Buscar mejor paquete para vos
+              Buscar el mejor paquete para vos
             </button>
           </div>
         </div>
