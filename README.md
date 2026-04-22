@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
+# NextTrip ✈️🌍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**NextTrip** es un proyecto desarrollado en **React + Vite + TypeScript + TailwindCSS** que simula una plataforma de viajes moderna.  
+El objetivo es recrear la experiencia de un sitio real de agencia de turismo, con secciones dinámicas, modales de contacto y animaciones, pero sin conexión a un backend ni lógica de reservas.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Características principales
 
-## React Compiler
+- **Hero animado con GSAP**: títulos y textos que aparecen con efecto *split text* y botones de acción.
+- **Sección Top Destinos**: tarjetas con imágenes, responsive y con modal de detalle.
+- **Paquetes de viaje**: cards estilo folleto con flip estático cada 10 segundos y modal con información ampliada.
+- **Modal de contacto unificado**: todos los botones de contacto abren el mismo flujo, con validación y notificaciones elegantes (React Toastify).
+- **Testimonios animados**: contenedores fluidos con motion.
+- **Marcas**: carrusel infinito con animación *marquee*.
+- **Footer y navegación**: diseño minimalista, coherente con la identidad visual.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React + Vite** → entorno rápido y modular.
+- **TypeScript** → tipado seguro y mantenible.
+- **TailwindCSS** → estilos responsivos y utilitarios.
+- **GSAP** → animaciones fluidas y modernas.
+- **React Toastify** → notificaciones de éxito y error.
+- **React Masonry** → grilla dinámica para imágenes en modales.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ⚙️ Instalación y ejecución
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+# Clonar el repositorio
+git clone https://github.com/tuusuario/nexttrip.git
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Instalar dependencias
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Ejecutar en desarrollo
+npm run dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Compilar para producción
+npm run build
+
+
+
+🎯 Por qué es un simulador
+Este proyecto no conecta con APIs ni bases de datos reales. Toda la información de destinos y paquetes está en archivos locales (src/data). Los formularios de contacto muestran notificaciones de éxito/error, pero no envían datos a un servidor.
+👉 De esta forma, NextTrip funciona como un simulador de agencia de viajes online, ideal para mostrar diseño, interacción y experiencia de usuario, sin necesidad de infraestructura backend.
+👨‍💻 Autor
+Proyecto desarrollado por Stefano, como práctica de UI/UX, branding y simulación de plataforma digital de viajes.
+
+URL: https://n-extrip.netlify.app/
